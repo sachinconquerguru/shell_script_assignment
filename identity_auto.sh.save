@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+cat cars.csv | while read row
+do
+	identity=`cut -d"," -f12,15 | grep 'Automatic transmission' | grep ' 
+	echo $identity,
+done
+
